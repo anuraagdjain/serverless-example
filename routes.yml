@@ -1,0 +1,21 @@
+listUsersHandler:
+  handler: 'src/handlers/users/list.handler'
+  package:
+    include:
+      - src/handlers/users/list.js
+  events:
+    - http:
+        path: users
+        method: get
+        cors: true
+
+getUserHandler:
+  handler: 'src/handlers/users/get.handler'
+  package:
+    include:
+      - src/handlers/users/get.js
+  events:
+    - http:
+        path: users/{id}
+        method: get
+        cors: true
