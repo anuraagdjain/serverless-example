@@ -7,7 +7,8 @@ A simple serverless project structure to build  REST API based app on AWS Lambda
     ├── .serverless           # AWS Cloudformation and lambda functions
     ├── routes.yml            # Project routes
     ├── resources             # Additional YML Files
-    ├── tools                 # Tools and utilities
+    ├── serverless.yml        # serverless config file. Create multiple files like routes.yml, environment.yml and include them here.
+    ├── utils                 # Tools and utilities
     ├── LICENSE
     └── README.md
 
